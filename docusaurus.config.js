@@ -1,5 +1,3 @@
-const path = require("path");
-
 module.exports = {
   title: "Foundation",
   tagline:
@@ -9,8 +7,8 @@ module.exports = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/fnd.svg",
-  organizationName: "f8n", // Your GitHub org name.
-  projectName: "f8n-contracts", // Your repo name.
+  organizationName: "f8n",
+  projectName: "fnd-docs",
   themeConfig: {
     navbar: {
       logo: {
@@ -37,47 +35,7 @@ module.exports = {
       ],
     },
     footer: {
-      // links: [
-      //   {
-      //     title: 'Foundation',
-      //     items: [
-      //       {
-      //         label: 'Docs',
-      //         to: 'docs/',
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: 'Connect',
-      //     items: [
-      //       {
-      //         label: 'Twitter',
-      //         href: 'https://twitter.com/withFND',
-      //       },
-      //       {
-      //         label: 'Discord',
-      //         href: 'https://discord.foundation.app',
-      //       },
-      //       {
-      //         label: 'Instagram',
-      //         href: 'https://www.instagram.com/withfoundation/',
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: 'More',
-      //     items: [
-      //       {
-      //         label: 'Blog',
-      //         to: 'https://foundation.app/blog',
-      //       },
-      //       {
-      //         label: 'GitHub',
-      //         href: 'https://github.com/f8n',
-      //       },
-      //     ],
-      //   },
-      // ],
+      // Açmak isterseniz buraya link bloklarını ekleyebilirsiniz.
       copyright: `foundation.app`,
     },
   },
@@ -87,8 +45,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          editUrl: "https://github.com/f8n/f8n-docs/edit/main/",
+          editUrl: "https://github.com/f8n/fnd-docs/edit/main/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
